@@ -60,11 +60,11 @@ static unsigned char* macstr_2_bytes(const char* str, unsigned char* mac)
     return mac;
 }
 
-// ·¢ËÍWOLÆô¶¯»úÆ÷ 
+// å‘é€WOLå¯åŠ¨æœºå™¨ 
 int send_wol(const char* szMac, const char* szIP, unsigned short port)
 {
     int s;
-    int packet_num = 5;
+    int packet_num = 3;
     unsigned char mac[6] = {0};
     struct sockaddr_in address;
     char magic_buf[6 + 6 * 16] = {0};
